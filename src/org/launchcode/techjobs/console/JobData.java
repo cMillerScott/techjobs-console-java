@@ -51,8 +51,12 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
-
-        return allJobs;
+        //declares empty ArrayList to store clone of allJobs
+        ArrayList<HashMap<String, String>> anAllJobs = new ArrayList<>();
+        //clones allJobs
+        anAllJobs = (ArrayList)allJobs.clone();
+        //returns allJobs clone
+        return anAllJobs;
     }
 
     /**
